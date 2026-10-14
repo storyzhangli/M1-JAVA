@@ -411,11 +411,3 @@ GET `[http://127.0.0.1:8080/user/1](http://127.0.0.1:8080/user/1)`
 Boot3.5 JDK21，MP3.5.7，Redis配Json序列化；
 统一Result加全局异常，缓存先查Redis再查库；
 mapper扫描不要忘，wrapper锁定Maven3.9.9。
-
-## 阶段1扩展任务（你今天可以直接做）
-
-1. 运行 `mvn wrapper:wrapper -Dmaven=3.9.9` 生成mvnw
-2. 启动项目，访问接口，验证DB+Redis缓存逻辑
-3. 在这个骨架上新增：RBAC用户权限基础模块（计划第一天任务）
-
-要不要我继续写RBAC用户、角色、权限三张表SQL + 对应的实体、mapper、service、controller代码？

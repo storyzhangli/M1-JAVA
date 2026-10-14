@@ -119,5 +119,3 @@
 Boot3不要boot-starter，改用spring-boot3-starter；
 factoryBeanObjectType报错，根源是mybatis-spring版本低；
 改pom、reload maven，代码一行不用改。
-
-改完之后项目能正常启动，要不要继续写RBAC的三张表SQL和实体类？
