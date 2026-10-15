@@ -7,6 +7,7 @@ import com.zl.d02.entity.dto.LoginDTO;
 import com.zl.d02.mapper.SysUserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
@@ -18,6 +19,8 @@ import java.util.concurrent.TimeUnit;
 public class AuthController {
     private final SysUserMapper sysUserMapper;
     private final RedisTemplate<String, Object> redisTemplate;
+    private final PasswordEncoder passwordEncoder;
+
     //接收表单参数
     @PostMapping("/loginForm")
     public Result<String> login(@RequestParam String username, @RequestParam String password) {
@@ -103,4 +106,52 @@ public class AuthController {
 
         return Result.success(token);
     }
+
+    @PostMapping("/loginCrypt")
+    public Result<String> loginCrypt(@RequestBody LoginDTO loginDTO) {
+        String username = loginDTO.getUsername();
+        String password = loginDTO.getPassword();
+        if (username == null || username.isBlank() || password == null || password.isBlank()) {
+            return Result.fail(400, "账号密码不能为空");
+        }
+
+        // 查询用户
+        SysUser user = sysUserMapper.selectOne(new LambdaQueryWrapper<SysUser>()
+                .eq(SysUser::getUsername, username)
+                .eq(SysUser::getStatus, 1));
+        if (user == null) {
+            return Result.fail(400, "用户不存在或已禁用");
+        }
+
+        // ========= BCrypt校验重点 =========
+        // 参数1：前端传入明文密码，参数2：数据库中存储的密文
+        boolean match = passwordEncoder.matches(password, user.getPassword());
+        if (!match) {
+            return Result.fail(400, "密码错误");
+        }
+
+        // 登录成功生成token存入Redis
+        String token = UUID.randomUUID().toString().replace("-", "");
+        redisTemplate.opsForValue().set("auth:token:" + token, user.getId(), 2, TimeUnit.HOURS);
+        return Result.success(token);
+    }
+
+    @PostMapping("/register")
+    public Result<Void> register(@RequestBody LoginDTO loginDTO){
+        String username = loginDTO.getUsername();
+        String password = loginDTO.getPassword();
+        // 判断用户名是否存在
+        Long count = sysUserMapper.selectCount(new LambdaQueryWrapper<SysUser>().eq(SysUser::getUsername, username));
+        if(count >0){
+            return Result.fail(400,"用户名已存在");
+        }
+        SysUser newUser = new SysUser();
+        newUser.setUsername(username);
+        // 加密明文密码再入库
+        newUser.setPassword(passwordEncoder.encode(password));
+        newUser.setStatus(1);
+        sysUserMapper.insert(newUser);
+        return Result.success();
+    }
+
 }
