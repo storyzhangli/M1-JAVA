@@ -31,6 +31,14 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 
 [mybatisPlus不兼容springboot3 版本异常](./docs/err_docs/mybatis-plus与springboot3版本不兼容问题-Invalid value type for attribute 'factoryBeanObjectType' java.lang.String.md)
 
+
+
+
+
 ## D2
+
+### D2 springboot自动装配-starter机制-bean生命周期
+
+[springboot自动装配 starter机制 bean生命周期](docs\D2-springboot3.X 核心：自动配置原理，starter 机制，bean 生命周期.md)
 
 ### D2 IOC与AOP
