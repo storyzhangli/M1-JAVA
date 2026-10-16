@@ -60,3 +60,11 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 ### D2 BCrypt加密改造
 
 [BCrypt加密改造-项目搭建](./docs/proj_docs/D2-02-BCrypt加密改造-项目搭建.md)
+
+## D3
+
+### Mysql核心：索引 最左前缀 ...
+
+[MySQL核心：B+ 树索引底层原理、最左前缀原则、`EXPLAIN` 关键字段、慢查询定位与优化 02](./docs/D3-MySQL 核心知识：MySQL InnoDB B+Tree index leftmost prefix EXPLAIN，B+ 02.md)
+
+[B+ 树索引底层原理、最左前缀原则、`EXPLAIN` 关键字段、慢查询定位与优化 01](./docs/D3-MySQL 核心知识：MySQL InnoDB B+Tree index leftmost prefix EXPLAIN，B+.md)
