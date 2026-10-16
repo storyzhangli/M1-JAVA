@@ -5,6 +5,8 @@ import com.zl.d03.common.Result;
 import com.zl.d03.entity.SysUser;
 import com.zl.d03.entity.dto.LoginDTO;
 import com.zl.d03.mapper.SysUserMapper;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,12 +18,17 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
+/*启动项目后访问：
+- 文档主页：`http://localhost:8080/doc.html`
+- OpenAPI 原始 JSON：`http://localhost:8080/v3/api-docs`*/
+@Tag(name="认证接口", description = "登录注册、token管理")
 public class AuthController {
     private final SysUserMapper sysUserMapper;
     private final RedisTemplate<String, Object> redisTemplate;
     private final PasswordEncoder passwordEncoder;
 
     //接收表单参数
+    @Operation(summary = "用户登录",method = "POST", description = "用户名密码登录，返回token")
     @PostMapping("/loginForm")
     public Result<String> login(@RequestParam String username, @RequestParam String password) {
         // 1. 查询用户
@@ -135,7 +142,7 @@ public class AuthController {
         redisTemplate.opsForValue().set("auth:token:" + token, user.getId(), 2, TimeUnit.HOURS);
         return Result.success(token);
     }
-
+    @Operation(summary = "用户注册", method = "POST",description = "新用户注册，密码BCrypt加密存储")
     @PostMapping("/register")
     public Result<Void> register(@RequestBody LoginDTO loginDTO){
         String username = loginDTO.getUsername();

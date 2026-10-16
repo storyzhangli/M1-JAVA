@@ -20,7 +20,15 @@ public class WebConfig implements WebMvcConfigurer {
                         "/auth/loginJson",
                         "/auth/loginCrypt",
                         "/auth/register",
-                        "/error"
+                        "/error",
+                        // ========== Knife4j / OpenAPI 全量放行 ==========
+                        "/doc.html",
+                        "/webjars/**",
+                        "/v3/api-docs/**",
+                        "/v3/api-docs",
+                        "/swagger-resources/**",
+                        "/swagger-ui/**",
+                        "/favicon.ico"
                 );
     }
 }

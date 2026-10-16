@@ -26,3 +26,15 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+
+# D03
+# Knife4j 配置
+knife4j:
+  enable: true
+  openapi:
+    title: AI智能知识助手
+    description: 阶段1工程骨架接口
+    version: 1.0.0
+  # 生产环境可设置为false关闭文档
+#  production: false
+
