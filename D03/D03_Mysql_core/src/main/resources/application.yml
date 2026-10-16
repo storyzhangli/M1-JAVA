@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  # mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ai_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  # redis
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: #无密码留空
+      database: 0
+
+# MyBatis-Plus配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.zl.d03.entity # todo 重命名包名，此处需要手动修改
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
