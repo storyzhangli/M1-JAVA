@@ -2,19 +2,34 @@ server:
   port: 8080
 
 spring:
-  # mysql
+  # MySQL 配置保持现有内容
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/ai_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
-  # redis
+
+  # Spring Boot 3.x Redis 连接配置
   data:
     redis:
       host: 127.0.0.1
       port: 6379
-      password: #无密码留空
+      password: ""
       database: 0
+      timeout: 3s
+
+  # D04 Redisson 专用配置
+  redis:
+    redisson:
+      config: |
+        singleServerConfig:
+          address: "redis://127.0.0.1:6379"
+          database: 0
+          connectionMinimumIdleSize: 2
+
+        lockWatchdogTimeout: 30000
+
+# MyBatis-Plus、Knife4j 等其他现有配置继续保留
 
 # MyBatis-Plus配置
 mybatis-plus:
@@ -37,10 +52,5 @@ knife4j:
     version: 1.0.0
   # 生产环境可设置为false关闭文档
 #  production: false
-# D04追加配置：Redisson分布式锁业务参数
-redisson:
-  singleServerConfig:
-    lockWatchdogTimeout: 30000 # 锁看门狗超时：业务执行超时自动续期，默认30秒
-    connectionMinimumIdleSize: 2 # 最小空闲连接数，复用连接池
 
 
