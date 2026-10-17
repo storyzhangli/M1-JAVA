@@ -37,4 +37,10 @@ knife4j:
     version: 1.0.0
   # 生产环境可设置为false关闭文档
 #  production: false
+# D04追加配置：Redisson分布式锁业务参数
+redisson:
+  singleServerConfig:
+    lockWatchdogTimeout: 30000 # 锁看门狗超时：业务执行超时自动续期，默认30秒
+    connectionMinimumIdleSize: 2 # 最小空闲连接数，复用连接池
+
 

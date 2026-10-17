@@ -19,6 +19,14 @@
     </properties>
 
     <dependencies>
+        <!-- D04 ===============================-->
+        <!-- Redisson分布式锁：缓存击穿核心组件，兼容SpringBoot3自动装配 -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.30.0</version>
+        </dependency>
+
         <!--密文存储方案-->
         <dependency>
             <groupId>org.springframework.security</groupId>

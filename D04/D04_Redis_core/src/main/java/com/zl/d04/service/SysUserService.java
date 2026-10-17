@@ -1,0 +1,20 @@
+package com.zl.d04.service;
+
+import com.zl.d04.entity.SysUser;
+
+public interface SysUserService {
+    /**
+     * 根据ID查询用户（带缓存+防击穿）
+     */
+    SysUser getUserById(Long userId);
+
+    /**
+     * 更新用户信息（同步失效缓存）
+     */
+    boolean updateUser(SysUser user);
+
+    /**
+     * 删除用户（同步失效缓存）
+     */
+    boolean deleteUser(Long userId);
+}
