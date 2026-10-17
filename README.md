@@ -92,3 +92,11 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 ### D4.Redis核心知识
 
 [Redis 核心知识-融合文档](./docs/D4-Redis 核心知识-融合文档.md)
+
+
+
+### D4.Redis核心 迭代项目文档
+
+[D4-00-Redis核心 项目搭建](./docs/proj_docs/D4-00-Redis核心 项目搭建.md)
+
+[D4-01-Redis核心 项目搭建](./docs/proj_docs/D4-01-Redis核心 项目搭建.md)
