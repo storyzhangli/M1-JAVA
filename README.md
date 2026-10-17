@@ -82,3 +82,13 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 ### D3.ERR-Knife4j-兼容问题
 
 [Knife4j 集成遇到兼容性问题](./docs/err_docs/D3-Knife4j 集成遇到兼容性问题，(豆包一直没能解决)GPT解决.md)
+
+
+
+
+
+## D4
+
+### D4.Redis核心知识
+
+[Redis 核心知识-融合文档](./docs/D4-Redis 核心知识-融合文档.md)
