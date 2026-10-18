@@ -22,7 +22,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public Result<User> getUserById(@PathVariable Long id){
-        String key = "d02:user:info:"+id;
+        String key = "d04:user:info:"+id;
         //1.查询redis缓存
         User cacheUser = (User) redisTemplate.opsForValue().get(key);
         if(cacheUser != null){

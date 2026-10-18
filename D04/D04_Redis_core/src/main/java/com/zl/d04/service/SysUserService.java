@@ -1,8 +1,9 @@
 package com.zl.d04.service;
 
+import com.baomidou.mybatisplus.spring.service.IService;
 import com.zl.d04.entity.SysUser;
 
-public interface SysUserService {
+public interface SysUserService extends IService<SysUser> {
     /**
      * 根据ID查询用户（带缓存+防击穿）
      */

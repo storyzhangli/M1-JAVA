@@ -27,7 +27,7 @@ spring:
           database: 0
           connectionMinimumIdleSize: 2
 
-        lockWatchdogTimeout: 30000
+      lockWatchdogTimeout: 30000
 
 # MyBatis-Plus、Knife4j 等其他现有配置继续保留
 

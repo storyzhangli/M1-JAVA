@@ -13,6 +13,7 @@ public enum ResultCodeEnum {
     PARAM_ERROR(1001, "参数错误"),
     BUSINESS_ERROR(2001, "业务处理失败"),
     LOCK_INTERRUPTED(2002, "缓存锁中断，请求失败"),
+    CACHE_BUSY(2003, "用户缓存正在重建，请稍后重试"),
     SYSTEM_ERROR(3001, "系统异常"),
     NO_PERMISSION(4001, "无权限访问");
 
