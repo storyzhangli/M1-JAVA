@@ -26,7 +26,6 @@ import java.util.concurrent.TimeUnit;
  * 3. 显式传入 leaseTime={@link CacheConstants#LOCK_LEASE_SECONDS} 秒，采用「固定租约」模式：
  *    - 正数 leaseTime 会关闭 Redisson Watchdog 自动续期，锁到期强制释放；
  *    - 业务（DB 查询 + 序列化 + 回写）必须在租约内完成，慢 SQL 需监控；
- *    - 若业务时长不可控，应改为不传 leaseTime（使用 lock() 无参重载）启用 Watchdog。
  * 4. 重试耗尽后快速失败抛出 {@link ResultCodeEnum#CACHE_BUSY}，不让请求无锁回源打垮 DB；
  * 5. 仅锁持有者执行 unlock，避免释放其他线程的锁。
  */
