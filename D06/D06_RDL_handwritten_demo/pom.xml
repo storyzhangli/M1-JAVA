@@ -16,6 +16,20 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jedis.version>5.1.5</jedis.version>
     </properties>
+
+    <dependencies>
+        <!--
+            手写分布式锁练习选用 Jedis 直连，不引入 Spring/Redisson，
+            便于直观理解 SET NX PX、Lua 脚本、看门狗的原始实现。
+            Jedis 5.x 兼容 JDK 21。
+        -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

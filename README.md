@@ -103,7 +103,7 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 
 
 
-## D05
+## D5
 
 ### D05.JUC核心知识
 
@@ -120,3 +120,28 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 [JUC核心 项目搭建说明](docs\proj_docs/D05-00-JUC核心 项目搭建.md)
 
 [异步线程池与接口并发测试](./docs/proj_docs/D05-01-异步线程池与接口并发测试.md)
+
+
+
+
+
+## D6
+
+### D06 分布式基础与Redis分布式锁
+
+[D6-Java分布式基础 Redis分布式锁 核心知识-融合文档](docs\D6-Java分布式基础 Redis分布式锁 核心知识-融合文档.md)
+
+### D06 代码练习：Redis分布式锁
+
+[手写Redis分布式锁-Lua原子释放与看门狗续期 demo](docs\proj_docs\D06-01-手写Redis分布式锁-Lua原子释放与看门狗续期.md)
+
+
+
+
+
+
+
+
+
+
+
