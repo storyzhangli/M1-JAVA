@@ -2,6 +2,34 @@ server:
   port: 8080
 
 spring:
+  # 应用名：作为 Nacos 注册中心的 serviceName，服务调用方通过该名称发现实例
+  application:
+    name: d06-cap-base-core
+
+  # D06 Nacos 服务注册与发现配置
+  cloud:
+    nacos:
+      discovery:
+        # Nacos Server 地址（本地单机默认 8848；生产环境配置为 Nacos 集群地址）
+        server-addr: 127.0.0.1:8848
+        # 命名空间：默认 public；多环境隔离时配置命名空间 ID
+        namespace:
+        # 注册分组
+        group: DEFAULT_GROUP
+        # 注册的服务名：默认取 spring.application.name
+        service: ${spring.application.name}
+        # 注册的 IP：默认取本机网卡 IP，可显式指定
+        ip:
+        # 注册端口：默认取 server.port
+        port: ${server.port}
+        # 是否注册到 Nacos（true 注册 / false 仅发现）
+        register-enabled: true
+        # 是否开启健康检查上报
+        healthy-check-enabled: true
+        # 「坑点提示」Nacos 未启动时默认 fail-fast=true 会导致应用启动失败；
+        # 本地开发无 Nacos 环境时建议置为 false（仅注册失败告警，不阻断启动）
+        fail-fast: false
+
   # MySQL 配置保持现有内容
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
