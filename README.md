@@ -25,7 +25,7 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 
 【参考文档】
 
-[D1-Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回.md](./docs/D1-Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回.md)
+[Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回.md](./docs/D1-Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回.md)
 
 【注意：MyBatisPlus版本过低不兼容springboot3，可能导致的异常】
 
@@ -39,15 +39,15 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 
 ### D2 springboot自动装配-starter机制-bean生命周期
 
-[springboot自动装配 starter机制 bean生命周期](docs\D2-springboot3.X 核心：自动配置原理，starter 机制，bean 生命周期.md)
+[springboot自动装配 starter机制 bean生命周期](./docs/D2-springboot3.X 核心：自动配置原理，starter 机制，bean 生命周期.md)
 
 
 
 ### D2 IOC与AOP原理
 
-[D2-Spring IOC AOP原理-动态代理、事务传播、失效场景](./docs/D2-Spring IOC AOP原理-动态代理、事务传播、失效场景.md)
+[Spring IOC AOP原理-动态代理、事务传播、失效场景](./docs/D2-Spring IOC AOP原理-动态代理、事务传播、失效场景.md)
 
-[D2-aop-log aop切面日志](./docs/D2-aop-log aop切面日志.md)
+[aop-log aop切面日志](./docs/D2-aop-log aop切面日志.md)
 
 
 
@@ -73,9 +73,9 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 
 ### D3.Proj-Mysql、Knife4j
 
-[项目迭代：MySQL核心-Knife4j](./docs/proj_docs\D3-00-项目迭代：MySQL核心-Knife4j借口文档.md)
+[项目迭代：MySQL核心-Knife4j](./docs/proj_docs/D3-00-项目迭代：MySQL核心-Knife4j借口文档.md)
 
-[项目迭代-EXPALIN示例用法](./docs/proj_docs\D3-01-项目迭代-EXPALIN示例用法.md)
+[项目迭代-EXPALIN示例用法](./docs/proj_docs/D3-01-项目迭代-EXPALIN示例用法.md)
 
 
 
@@ -111,12 +111,12 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 
 ### D05.JUC demo
 
-[自定义线程池 demo](./docs/proj_docs\D05-手写自定义线程池.md)
+[自定义线程池 demo](./docs/proj_docs/D05-手写自定义线程池.md)
 
 
 
 ### D05 JUC项目迭代
 
-[JUC核心 项目搭建说明](docs\proj_docs\D05-00-JUC核心 项目搭建.md)
+[JUC核心 项目搭建说明](docs\proj_docs/D05-00-JUC核心 项目搭建.md)
 
-[异步线程池与接口并发测试](./docs/proj_docs\D05-01-异步线程池与接口并发测试.md)
+[异步线程池与接口并发测试](./docs/proj_docs/D05-01-异步线程池与接口并发测试.md)
