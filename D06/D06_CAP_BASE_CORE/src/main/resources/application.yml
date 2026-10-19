@@ -1,0 +1,58 @@
+server:
+  port: 8080
+
+spring:
+  # MySQL 配置保持现有内容
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ai_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+  # Spring Boot 3.x Redis 连接配置
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: ""
+      database: 0
+      timeout: 3s
+
+  # D04 Redisson 专用配置
+  # 「坑点提示」lockWatchdogTimeout 是 Redisson 原生配置项，必须放在 config: | 块字符串内部，
+  # 与 singleServerConfig 同级；放在外面 Redisson 读取不到，配置静默失效。
+  redis:
+    redisson:
+      config: |
+        singleServerConfig:
+          address: "redis://127.0.0.1:6379"
+          database: 0
+          connectionMinimumIdleSize: 2
+        # 固定租约模式下看门狗不启动，此配置仅在改用 lock() 无参重载时生效
+        lockWatchdogTimeout: 30000
+
+# MyBatis-Plus、Knife4j 等其他现有配置继续保留
+
+# MyBatis-Plus配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.zl.d06.entity # todo 重命名包名，此处需要手动修改
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+# D03
+# Knife4j 配置
+knife4j:
+  enable: true
+  openapi:
+    title: AI智能知识助手
+    description: 阶段1工程骨架接口
+    version: 1.0.0
+  # 生产环境可设置为false关闭文档
+#  production: false
+
+
