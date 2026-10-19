@@ -25,11 +25,11 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 
 【参考文档】
 
-[Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回.md](./docs/D1-Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回.md)
+[Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回.md](./docs/proj_docs/D1-01-Maven多模块骨架-整合MyBatisPlus Redis 通用异常与封装返回-项目搭建.md)
 
 【注意：MyBatisPlus版本过低不兼容springboot3，可能导致的异常】
 
-[mybatisPlus不兼容springboot3 版本异常](./docs/err_docs/mybatis-plus与springboot3版本不兼容问题-Invalid value type for attribute 'factoryBeanObjectType' java.lang.String.md)
+[mybatisPlus不兼容springboot3 版本异常](./docs/err_docs/D1-mybatis-plus与springboot3版本不兼容问题-Invalid value type for attribute 'factoryBeanObjectType' java.lang.String.md)
 
 
 
