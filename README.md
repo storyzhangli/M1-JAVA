@@ -100,3 +100,23 @@ Springboot自动装配 最简demo: D01_SpringBoot_Auto_config
 [D4-00-Redis核心 项目搭建](./docs/proj_docs/D4-00-Redis核心 项目搭建.md)
 
 [D4-01-Redis核心 项目搭建](./docs/proj_docs/D4-01-Redis核心 项目搭建.md)
+
+
+
+## D05
+
+### D05.JUC核心知识
+
+[D05-Java并发核心知识](./docs/D05-Java并发核心知识-融合文档.md)
+
+### D05.JUC demo
+
+[自定义线程池 demo](./docs/proj_docs\D05-手写自定义线程池.md)
+
+
+
+### D05 JUC项目迭代
+
+[JUC核心 项目搭建说明](docs\proj_docs\D05-00-JUC核心 项目搭建.md)
+
+[异步线程池与接口并发测试](./docs/proj_docs\D05-01-异步线程池与接口并发测试.md)
