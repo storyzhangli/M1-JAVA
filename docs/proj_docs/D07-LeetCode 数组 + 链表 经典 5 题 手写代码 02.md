@@ -61,7 +61,7 @@ public class TwoSum {
             map.put(nums[i], i);
         }
         // 题目保证有解，此处仅作异常兜底
-        throw new IllegalArgumentException("No two sum solution");
+        throw new IllegalArgumentException("No two sum solutionN1");
     }
 }
 ```

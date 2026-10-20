@@ -35,15 +35,15 @@ public class Solution {
             numIndexMap.put(nums[i], i);
         }
         // 题目保证有解，此处仅为编译合规
-        throw new IllegalArgumentException("No two sum solution");
+        throw new IllegalArgumentException("No two sum solutionN1");
     }
 
     // 本地测试
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution solutionN1 = new Solution();
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        int[] result = solution.twoSum(nums, target);
+        int[] result = solutionN1.twoSum(nums, target);
         System.out.println("[" + result[0] + ", " + result[1] + "]"); // 输出 [0, 1]
     }
 }
@@ -92,9 +92,9 @@ public class Solution {
 
     // 本地测试
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution solutionN1 = new Solution();
         int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        System.out.println(solution.maxSubArray(nums)); // 输出 6（对应子数组 [4,-1,2,1]）
+        System.out.println(solutionN1.maxSubArray(nums)); // 输出 6（对应子数组 [4,-1,2,1]）
     }
 }
 ```
@@ -146,9 +146,9 @@ public class Solution {
 
     // 本地测试
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution solutionN1 = new Solution();
         int[] nums = {0, 1, 0, 3, 12};
-        solution.moveZeroes(nums);
+        solutionN1.moveZeroes(nums);
         for (int num : nums) {
             System.out.print(num + " "); // 输出 1 3 12 0 0
         }
@@ -232,10 +232,10 @@ public class Solution {
 
     // 本地测试
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution solutionN1 = new Solution();
         // 构造链表 1->2->3->4->5
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        ListNode reversed = solution.reverseList(head);
+        ListNode reversed = solutionN1.reverseList(head);
         // 打印反转结果
         while (reversed != null) {
             System.out.print(reversed.val + " "); // 输出 5 4 3 2 1
@@ -297,10 +297,10 @@ public class Solution {
 
     // 本地测试
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution solutionN1 = new Solution();
         ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
         ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-        ListNode merged = solution.mergeTwoLists(l1, l2);
+        ListNode merged = solutionN1.mergeTwoLists(l1, l2);
         while (merged != null) {
             System.out.print(merged.val + " "); // 输出 1 1 2 3 4 4
             merged = merged.next;
