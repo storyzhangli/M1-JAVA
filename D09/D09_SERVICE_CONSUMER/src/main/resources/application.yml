@@ -1,0 +1,39 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: d09-consumer
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: DEFAULT_GROUP
+        fail-fast: false
+
+    # OpenFeign 配置
+    openfeign:
+      # 开启 Feign 与熔断（CircuitBreaker）集成，使 fallback/fallbackFactory 生效
+      circuitbreaker:
+        enabled: true
+      client:
+        config:
+          # 默认客户端配置（可对 d09-provider 单独覆盖）
+          default:
+            # 连接超时：建立 TCP 连接的最长等待
+            connectTimeout: 1000
+            # 读取超时：等待下游响应的最长时间，超时即触发熔断降级
+            readTimeout: 2000
+            # 日志级别：BASIC 记录方法、URL、状态码、耗时（演示用）
+            loggerLevel: basic
+      # 关闭 Feign 自动重试（默认即不重试），避免与熔断叠加放大下游压力
+      autoconfiguration:
+        jackson:
+          enabled: true
+
+# 说明：Resilience4j 的 TimeLimiter 与 CircuitBreaker 参数不在此配置。
+# 原因：开启 Feign 熔断后，熔断器按「每个 Feign 方法」生成（id 形如 ProviderFeignClientslowlong），
+# 这里写 resilience4j.instances.d09-provider 无法匹配。
+# 已在 CircuitBreakerMdcConfig 中通过 factory.configureDefault(...) 统一设置默认参数，
+# 并通过 MdcAwareExecutorService 传递 MDC，保证 traceId 跨线程一致。
