@@ -706,13 +706,15 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      routes:
-        - id: order_route
-          uri: [http://localhost:8081](http://localhost:8081)
-          predicates:
-            - Path=/api/orders/**
-          filters:
-            - StripPrefix=2 # 剥离/api前缀，转发到订单服务
+      server:
+        webflux:
+          routes:
+            - id: order_route
+              uri: http://localhost:8081
+              predicates:
+                - Path=/api/orders/**
+              filters:
+                - StripPrefix=1
 ```
 
 ---
@@ -830,7 +832,7 @@ public class FeignInterceptorConfig {
 
 #### 3.5 库存服务 Feign 客户端
 
-```
+```java
 package com.practice.order.client;
 
 import com.practice.order.config.FeignInterceptorConfig;
@@ -841,7 +843,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(
         name = "inventory-service",
-        url = "[http://localhost:8082](http://localhost:8082)",
+        url = "http://localhost:8082",
         configuration = FeignInterceptorConfig.class,
         fallbackFactory = InventoryFallbackFactory.class
 )
