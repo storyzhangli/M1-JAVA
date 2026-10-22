@@ -9,6 +9,8 @@
         <module>d09_feign_handwritten_demo</module>
         <module>D09_SERVICE_PROVIDER</module>
         <module>D09_SERVICE_CONSUMER</module>
+        <module>d09_feign_handwritten_demo/d09_feign_order-service</module>
+        <module>d09_feign_handwritten_demo/d09_feign_inventory-service</module>
     </modules>
 
     <groupId>org.ai.m1</groupId>

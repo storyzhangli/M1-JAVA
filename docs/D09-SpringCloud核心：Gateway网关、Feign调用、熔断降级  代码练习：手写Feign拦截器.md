@@ -1212,6 +1212,3 @@ curl [http://localhost:8080/api/orders/error](http://localhost:8080/api/orders/e
 核心功能验收通过，满足阶段学习目标。
 ```
 
----
-
-需要我补充拦截器的单元测试代码，或者补充服务发现、负载均衡的扩展实现吗？
