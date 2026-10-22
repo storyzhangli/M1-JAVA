@@ -1,86 +1,57 @@
 server:
-  port: 8080
+  port: 9000
 
 spring:
-  # 应用名：作为 Nacos 注册中心的 serviceName，服务调用方通过该名称发现实例 todo 应用名称对应模块
   application:
-    name: d09-gateway-isi
+    name: d09-gateway
 
-  # D06 Nacos 服务注册与发现配置
+  # Nacos 服务发现：网关据此获取 Provider/Consumer 实例列表
   cloud:
     nacos:
       discovery:
-        # Nacos Server 地址（本地单机默认 8848；生产环境配置为 Nacos 集群地址）
         server-addr: 127.0.0.1:8848
-        # 命名空间：默认 public；多环境隔离时配置命名空间 ID
-        namespace:
-        # 注册分组
         group: DEFAULT_GROUP
-        # 注册的服务名：默认取 spring.application.name
-        service: ${spring.application.name}
-        # 注册的 IP：默认取本机网卡 IP，可显式指定
-        ip:
-        # 注册端口：默认取 server.port
-        port: ${server.port}
-        # 是否注册到 Nacos（true 注册 / false 仅发现）
-        register-enabled: true
-        # 是否开启健康检查上报
-        healthy-check-enabled: true
-        # 「坑点提示」Nacos 未启动时默认 fail-fast=true 会导致应用启动失败；
-        # 本地开发无 Nacos 环境时建议置为 false（仅注册失败告警，不阻断启动）
+        # 本地 Nacos 已启动，可保持 fail-fast 默认；如遇环境问题可临时置 false
         fail-fast: false
 
-  # MySQL 配置保持现有内容
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/ai_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
-    password: 123456
+    # Spring Cloud 2025.0.0 起，网关配置统一收敛到 gateway.server.webflux 下
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              # 不自动按服务名创建路由（显式配置更清晰），需要时可置 true
+              enabled: false
 
-  # Spring Boot 3.x Redis 连接配置
+          # 全局默认过滤器：对所有路由生效的 Redis 令牌桶限流
+          default-filters:
+            - name: RequestRateLimiter
+              args:
+                # 令牌补充速率：每秒 1 个（便于快速触发限流）
+                redis-rate-limiter.replenishRate: 1
+                # 桶容量：最多允许 2 个突发请求
+                redis-rate-limiter.burstCapacity: 2
+                # 每个请求消耗 1 个令牌
+                redis-rate-limiter.requestedTokens: 1
+                # 限流维度：按客户端 IP（SpEL 引用名为 ipKeyResolver 的 Bean）
+                key-resolver: "#{@ipKeyResolver}"
+
+          # 显式路由：通过 lb://服务名 走负载均衡转发
+          routes:
+            - id: provider-route
+              uri: lb://d09-provider
+              predicates:
+                # 保留 /provider 前缀，Provider 接口路径即 /provider/**
+                - Path=/provider/**
+            - id: consumer-route
+              uri: lb://d09-consumer
+              predicates:
+                - Path=/consumer/**
+
+  # 限流使用的 Redis 连接
   data:
     redis:
       host: 127.0.0.1
       port: 6379
-      password: ""
       database: 0
       timeout: 3s
-
-  # D04 Redisson 专用配置
-  # 「坑点提示」lockWatchdogTimeout 是 Redisson 原生配置项，必须放在 config: | 块字符串内部，
-  # 与 singleServerConfig 同级；放在外面 Redisson 读取不到，配置静默失效。
-  redis:
-    redisson:
-      config: |
-        singleServerConfig:
-          address: "redis://127.0.0.1:6379"
-          database: 0
-          connectionMinimumIdleSize: 2
-        # 固定租约模式下看门狗不启动，此配置仅在改用 lock() 无参重载时生效
-        lockWatchdogTimeout: 30000
-
-# MyBatis-Plus、Knife4j 等其他现有配置继续保留
-
-# MyBatis-Plus配置
-mybatis-plus:
-  mapper-locations: classpath:mapper/**/*.xml
-  type-aliases-package: com.zl.d09.entity # todo 重命名包名，此处需要手动修改
-  configuration:
-    map-underscore-to-camel-case: true
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  global-config:
-    db-config:
-      id-type: auto
-
-# D03
-# Knife4j 配置
-knife4j:
-  enable: true
-  openapi:
-    title: AI智能知识助手
-    description: 阶段1工程骨架接口
-    version: 1.0.0
-  # 生产环境可设置为false关闭文档
-#  production: false
-
-
