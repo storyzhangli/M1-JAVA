@@ -7,6 +7,8 @@
     <modules>
         <module>D09_GATEWAY</module>
         <module>d09_feign_handwritten_demo</module>
+        <module>D09_SERVICE_PROVIDER</module>
+        <module>D09_SERVICE_CONSUMER</module>
     </modules>
 
     <groupId>org.ai.m1</groupId>
