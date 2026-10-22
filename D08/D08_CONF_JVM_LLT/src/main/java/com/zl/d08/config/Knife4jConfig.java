@@ -31,7 +31,7 @@ public class Knife4jConfig {
     public GroupedOpenApi publicApi() {
         return GroupedOpenApi.builder()
                 .group("default")
-                // 显式指定你的 controller 包路径 todo 路径不对，无数据
+                // 显式指定你的 controller 包路径
                 .packagesToScan("com.zl.d08.controller")
                 .pathsToMatch("/**")
                 .build();

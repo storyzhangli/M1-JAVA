@@ -2,7 +2,7 @@ server:
   port: 8080
 
 spring:
-  # 应用名：作为 Nacos 注册中心的 serviceName，服务调用方通过该名称发现实例 todo 应用名称对应模块
+  # 应用名：作为 Nacos 注册中心的 serviceName，服务调用方通过该名称发现实例
   application:
     name: d08-conf-jvm-llt
 
@@ -64,7 +64,7 @@ spring:
 # MyBatis-Plus配置
 mybatis-plus:
   mapper-locations: classpath:mapper/**/*.xml
-  type-aliases-package: com.zl.d08.entity # todo 重命名包名，此处需要手动修改
+  type-aliases-package: com.zl.d08.entity
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
