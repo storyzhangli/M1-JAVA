@@ -194,19 +194,19 @@ public class Result<T> {
 
 ```mermaid
 flowchart TD
-    A[客户端发起 GET /user/{id}] --> B[AuthInterceptor 校验 token]
-    B -->|无 token/失效| C[返回 401 JSON]
-    B -->|通过| D[UserContext 写入用户 ID]
-    D --> E[UserController.getUserById]
-    E --> F[按模块前缀拼接缓存 Key]
-    F --> G{Redis 是否命中}
-    G -->|命中| H[返回缓存用户]
-    G -->|未命中| I[查询数据库]
-    I --> J{用户是否存在}
-    J -->|不存在| K[返回 404 用户不存在]
-    J -->|存在| L[回写 Redis 并设置过期时间]
-    L --> M[返回用户信息]
-    H --> N[afterCompletion 清理 UserContext]
+    A["客户端发起 GET /user/{id}"] --> B["AuthInterceptor 校验 token"]
+    B -->|无 token/失效| C["返回 401 JSON"]
+    B -->|通过| D["UserContext 写入用户 ID"]
+    D --> E["UserController.getUserById"]
+    E --> F["按模块前缀拼接缓存 Key"]
+    F --> G{"Redis 是否命中"}
+    G -->|命中| H["返回缓存用户"]
+    G -->|未命中| I["查询数据库"]
+    I --> J{"用户是否存在"}
+    J -->|不存在| K["返回 404 用户不存在"]
+    J -->|存在| L["回写 Redis 并设置过期时间"]
+    L --> M["返回用户信息"]
+    H --> N["afterCompletion 清理 UserContext"]
     M --> N
 ```
 
