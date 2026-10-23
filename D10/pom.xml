@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>D10_IARL</module>
+        <module>D10_idempotency_handwritten_demo</module>
     </modules>
 
     <groupId>org.ai.m1</groupId>
