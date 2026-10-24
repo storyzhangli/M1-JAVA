@@ -54,4 +54,24 @@ public class IdempotencyService {
             recordMapper.updateById(rec);
         }
     }
+
+    /**
+     * 失败重试的原子资格争抢：仅当记录当前处于 FAILED 时，才条件更新为 PROCESSING。
+     *
+     * <p>通过 WHERE status='FAILED' 的条件更新，保证多个并发重试请求中最多一个抢到资格
+     * （受影响行数为 1），其余请求争抢时状态已是 PROCESSING，受影响行数为 0。</p>
+     *
+     * @return true 表示当前请求抢到重试资格；false 表示资格已被抢占或状态已变化
+     */
+    @Transactional(rollbackFor = Exception.class)
+    public boolean claimForRetry(String tenantId, String apiCode, String key) {
+        int affected = recordMapper.update(null, Wrappers.<IdempotencyRecord>lambdaUpdate()
+                .eq(IdempotencyRecord::getTenantId, tenantId)
+                .eq(IdempotencyRecord::getApiCode, apiCode)
+                .eq(IdempotencyRecord::getIdempotencyKey, key)
+                .eq(IdempotencyRecord::getStatus, FAILED)
+                .set(IdempotencyRecord::getStatus, PROCESSING)
+                .set(IdempotencyRecord::getUpdatedAt, LocalDateTime.now()));
+        return affected > 0;
+    }
 }

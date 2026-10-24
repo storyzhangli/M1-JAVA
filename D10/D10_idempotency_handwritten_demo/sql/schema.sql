@@ -26,9 +26,12 @@ CREATE TABLE IF NOT EXISTS `idempotency_record` (
 
 -- ---------------------------------------------------------------------
 -- 2. 订单表 order_info
+--    (tenant_id, idempotency_key) 联合唯一约束作为「最终防重防线」：
+--    即使应用层状态判断出现竞态，数据库也会拒绝同一作用域内的重复订单。
 -- ---------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `order_info` (
     `id`              BIGINT       NOT NULL AUTO_INCREMENT COMMENT '订单ID',
+    `tenant_id`       VARCHAR(32)  NOT NULL DEFAULT 'default' COMMENT '租户标识，作用域隔离',
     `product_id`      BIGINT       NOT NULL COMMENT '商品ID',
     `quantity`        INT          NOT NULL COMMENT '数量',
     `status`          VARCHAR(16)  NOT NULL COMMENT '状态：CREATED/PAID/CANCELLED',
@@ -36,5 +39,5 @@ CREATE TABLE IF NOT EXISTS `order_info` (
     `created_at`      DATETIME     NOT NULL COMMENT '创建时间',
     `updated_at`      DATETIME     NOT NULL COMMENT '更新时间',
     PRIMARY KEY (`id`),
-    KEY `idx_idempotency_key` (`idempotency_key`)
+    UNIQUE KEY `uk_tenant_idempotency` (`tenant_id`, `idempotency_key`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COMMENT = '订单表';

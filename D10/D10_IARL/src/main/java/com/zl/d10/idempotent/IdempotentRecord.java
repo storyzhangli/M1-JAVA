@@ -15,6 +15,13 @@ public class IdempotentRecord {
     /** 已完成：业务处理完成，结果已保存。 */
     public static final String COMPLETED = "COMPLETED";
 
+    /**
+     * 请求所有权标识（owner token）：每次抢占生成唯一 UUID。
+     * 仅持有该标识的请求才允许删除或覆盖本记录，Lua 脚本据此做原子条件校验，
+     * 防止「原请求执行期间键过期、被新请求重新占位后，旧请求误删/误覆盖新记录」。
+     */
+    private String ownerToken;
+
     /** 当前状态：PROCESSING / COMPLETED。 */
     private String status;
 

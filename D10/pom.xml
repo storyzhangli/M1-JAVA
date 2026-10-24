@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>D10_IARL</module>
+        <!--D10聚合POM D10_idempotency_handwritten_demo-->
         <module>D10_idempotency_handwritten_demo</module>
     </modules>
 

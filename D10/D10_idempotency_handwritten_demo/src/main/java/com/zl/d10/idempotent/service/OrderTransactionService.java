@@ -37,6 +37,7 @@ public class OrderTransactionService {
 
         // 1. 写入订单
         OrderInfo order = new OrderInfo();
+        order.setTenantId(tenantId);
         order.setProductId(request.getProductId());
         order.setQuantity(request.getQuantity());
         order.setStatus("CREATED");

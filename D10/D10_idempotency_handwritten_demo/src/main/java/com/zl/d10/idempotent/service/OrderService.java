@@ -93,7 +93,12 @@ public class OrderService {
                 // 处理中：提示勿重复提交
                 throw new IdempotencyException(409, 40902, "请求正在处理中，请勿重复提交");
             case IdempotencyService.FAILED:
-                // 之前失败：允许重新执行
+                // 之前失败：先原子争抢重试资格（FAILED -> PROCESSING），最多一个请求能抢到
+                boolean claimed = idempotencyService.claimForRetry(tenantId, API_CODE, key);
+                if (!claimed) {
+                    // 资格已被其他并发重试请求抢占
+                    throw new IdempotencyException(409, 40902, "失败重试正在处理中，请勿重复提交");
+                }
                 OrderResponse retried = transactionService.createAndSucceed(
                         tenantId, API_CODE, key, request);
                 return new OrderResult(201, ApiResponse.ok("创建成功", retried));

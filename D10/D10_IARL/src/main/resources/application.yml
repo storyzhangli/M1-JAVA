@@ -83,4 +83,18 @@ knife4j:
   # 生产环境可设置为false关闭文档
 #  production: false
 
+# 应用安全相关配置
+app:
+  rate-limit:
+    # 是否信任 X-Forwarded-For。服务直接对公网开放时必须保持 false，防止伪造头绕过 IP 限流；
+    # 仅当服务位于明确的可信反向代理（如 Nginx）之后时才置为 true。
+    trust-forward-headers: false
+    # 可信反向代理跳数 N：真实客户端取 XFF 中倒数第 N+1 个地址
+    trusted-proxy-count: 1
+    # 可信代理 IP 白名单：只有 TCP 对端命中其中地址才解析转发头
+    trusted-proxy-ips:
+      - 127.0.0.1
+      - 0:0:0:0:0:0:0:1
+      - localhost
+
 

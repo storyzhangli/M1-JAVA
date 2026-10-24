@@ -1,4 +1,4 @@
-11:17:56,426 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
+17:10:46,488 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [FILE] not referenced. Skipping further processing.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -9,227 +9,56 @@
 
  :: Spring Boot ::               (v3.5.16)
 
-2026-10-23 11:17:56.509 [34mINFO [0;39m [background-preinit] [traceId=] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.3.Final
-2026-10-23 11:17:56.572 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.D10App[0;39m - Starting D10App v1.0-SNAPSHOT using Java 21.0.7 with PID 14396 (E:\AI\project\AI-Learning-one\M1-Java\D10\D10_IARL\target\D10_IARL-1.0-SNAPSHOT.jar started by zl in E:\AI\project\AI-Learning-one\M1-Java\D10\D10_IARL)
-2026-10-23 11:17:56.575 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.D10App[0;39m - No active profile set, falling back to 1 default profile: "default"
-2026-10-23 11:17:58.943 [34mINFO [0;39m [main] [traceId=] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-10-23 11:17:58.952 [34mINFO [0;39m [main] [traceId=] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-10-23 11:17:59.018 [34mINFO [0;39m [main] [traceId=] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2026-10-23 11:17:59.548 [34mINFO [0;39m [main] [traceId=] [36mo.s.cloud.context.scope.GenericScope[0;39m - BeanFactory id=d288a759-11cc-3c62-8abf-c86adc762f0d
-2026-10-23 11:18:00.985 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.w.embedded.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
-2026-10-23 11:18:01.013 [34mINFO [0;39m [main] [traceId=] [36mo.apache.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
-2026-10-23 11:18:01.013 [34mINFO [0;39m [main] [traceId=] [36mo.apache.catalina.core.StandardService[0;39m - Starting service [Tomcat]
-2026-10-23 11:18:01.019 [34mINFO [0;39m [main] [traceId=] [36morg.apache.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.55]
-2026-10-23 11:18:01.098 [34mINFO [0;39m [main] [traceId=] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
-2026-10-23 11:18:01.103 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4452 ms
-2026-10-23 11:18:01.936 [34mINFO [0;39m [main] [traceId=] [36morg.redisson.Version[0;39m - Redisson 3.30.0
-2026-10-23 11:18:02.652 [34mINFO [0;39m [redisson-netty-1-4] [traceId=] [36mo.redisson.connection.ConnectionsHolder[0;39m - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-2026-10-23 11:18:02.658 [34mINFO [0;39m [redisson-netty-1-7] [traceId=] [36mo.redisson.connection.ConnectionsHolder[0;39m - 2 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-10-24 17:10:46.556 [34mINFO [0;39m [background-preinit] [traceId=] [36mo.h.validator.internal.util.Version[0;39m - HV000001: Hibernate Validator 8.0.3.Final
+2026-10-24 17:10:46.624 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.D10App[0;39m - Starting D10App v1.0-SNAPSHOT using Java 21.0.7 with PID 27576 (E:\AI\project\AI-Learning-one\M1-Java\D10\D10_IARL\target\D10_IARL-1.0-SNAPSHOT.jar started by zl in E:\AI\project\AI-Learning-one\M1-Java\D10\D10_IARL)
+2026-10-24 17:10:46.625 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.D10App[0;39m - No active profile set, falling back to 1 default profile: "default"
+2026-10-24 17:10:48.615 [34mINFO [0;39m [main] [traceId=] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-24 17:10:48.620 [34mINFO [0;39m [main] [traceId=] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-24 17:10:48.671 [34mINFO [0;39m [main] [traceId=] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2026-10-24 17:10:49.086 [34mINFO [0;39m [main] [traceId=] [36mo.s.cloud.context.scope.GenericScope[0;39m - BeanFactory id=c0a8cb91-c1b1-3a67-94a5-4c69fa30e2dd
+2026-10-24 17:10:50.173 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.w.embedded.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2026-10-24 17:10:50.194 [34mINFO [0;39m [main] [traceId=] [36mo.apache.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-24 17:10:50.196 [34mINFO [0;39m [main] [traceId=] [36mo.apache.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2026-10-24 17:10:50.196 [34mINFO [0;39m [main] [traceId=] [36morg.apache.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-24 17:10:50.277 [34mINFO [0;39m [main] [traceId=] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2026-10-24 17:10:50.278 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3600 ms
+2026-10-24 17:10:50.947 [34mINFO [0;39m [main] [traceId=] [36morg.redisson.Version[0;39m - Redisson 3.30.0
+2026-10-24 17:10:51.423 [34mINFO [0;39m [redisson-netty-1-4] [traceId=] [36mo.redisson.connection.ConnectionsHolder[0;39m - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-10-24 17:10:51.431 [34mINFO [0;39m [redisson-netty-1-7] [traceId=] [36mo.redisson.connection.ConnectionsHolder[0;39m - 2 connections initialized for 127.0.0.1/127.0.0.1:6379
 Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
 Get /192.168.1.2 network interface 
 Get network interface info: name:wireless_32768 (Intel(R) Wi-Fi 6 AX200 160MHz)
-Initialization Sequence datacenterId:28 workerId:7
+Initialization Sequence datacenterId:28 workerId:9
  _ _   |_  _ _|_. ___ _ |    _ 
 | | |\/|_)(_| | |_\  |_)||_|_\ 
      /               |         
                         null 
-2026-10-23 11:18:03.978 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.config.AsyncThreadPoolConfig[0;39m - bizTaskExecutor 初始化完成: core=32, max=64, queue=200
-2026-10-23 11:18:05.011 [34mINFO [0;39m [main] [traceId=] [36mc.b.m.s.MybatisPlusApplicationContextAware[0;39m - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64bc21ac
-2026-10-23 11:18:05.888 [31mWARN [0;39m [main] [traceId=] [36mo.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger[0;39m - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-10-23 11:18:05.898 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
-2026-10-23 11:18:06.032 [34mINFO [0;39m [main] [traceId=] [36mo.apache.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
-2026-10-23 11:18:06.051 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.w.embedded.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
-2026-10-23 11:18:06.073 [34mINFO [0;39m [Thread-3] [traceId=] [36mc.a.n.c.a.ram.identify.CredentialWatcher[0;39m - null No credential found
-2026-10-23 11:18:06.081 [34mINFO [0;39m [main] [traceId=] [36mc.a.nacos.client.logging.NacosLogging[0;39m - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
-2026-10-23 11:18:06.082 [34mINFO [0;39m [main] [traceId=] [36mc.a.nacos.client.logging.NacosLogging[0;39m - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
-2026-10-23 11:18:06.084 [34mINFO [0;39m [main] [traceId=] [36mc.a.nacos.client.logging.NacosLogging[0;39m - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
-2026-10-23 11:18:06.182 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.p.a.s.c.ClientAuthPluginManager[0;39m - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2026-10-23 11:18:06.182 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.p.a.s.c.ClientAuthPluginManager[0;39m - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2026-10-23 11:18:07.114 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.AbstractAbilityControlManager[0;39m - Ready to get current node abilities...
-2026-10-23 11:18:07.117 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.AbstractAbilityControlManager[0;39m - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
-2026-10-23 11:18:07.117 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.AbstractAbilityControlManager[0;39m - Initialize current abilities finish...
-2026-10-23 11:18:07.117 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.d.NacosAbilityManagerHolder[0;39m - [AbilityControlManager] Successfully initialize AbilityControlManager
-2026-10-23 11:18:07.176 [34mINFO [0;39m [main] [traceId=] [36mc.a.c.n.registry.NacosServiceRegistry[0;39m - nacos registry, DEFAULT_GROUP d10-iarl 192.168.6.1:8080 register finished
-2026-10-23 11:18:07.219 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.D10App[0;39m - Started D10App in 11.533 seconds (process running for 12.364)
-2026-10-23 11:18:39.837 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-10-23 11:18:39.837 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
-2026-10-23 11:18:39.840 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 3 ms
-2026-10-23 11:18:40.189 [34mINFO [0;39m [http-nio-8080-exec-2] [traceId=239837cf475f4346812fcba88e1cdf2b] [36mc.zl.d10.idempotent.IdempotentController[0;39m - 【实际执行业务】进入下单逻辑，幂等键=K1, 第 1 次执行, 参数=OrderRequest(userId=1001, goodsId=G-1, quantity=2, remark=first)
-2026-10-23 11:18:40.763 [34mINFO [0;39m [http-nio-8080-exec-3] [traceId=884f8ca9a0c6478fb661a1f8ee95fd19] [36mcom.zl.d10.idempotent.IdempotentAspect[0;39m - 重复请求命中已完成记录，返回原结果，幂等键=K1
-2026-10-23 11:18:40.932 [34mINFO [0;39m [http-nio-8080-exec-4] [traceId=3c41c3e90a604ecb8afc42fa12478dfc] [36mc.zl.d10.idempotent.IdempotentController[0;39m - 【实际执行业务】进入下单逻辑，幂等键=K3, 第 2 次执行, 参数=OrderRequest(userId=1001, goodsId=G-1, quantity=2, remark=first)
-2026-10-23 11:18:40.941 [31mWARN [0;39m [http-nio-8080-exec-5] [traceId=433718792db344ceb0ada557b7c14d5c] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 业务异常：请求正在处理中，请勿重复提交（幂等键 K3）
-2026-10-23 11:18:41.500 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=c4aaa7eda7404ea984b640d472e8b8fd] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 业务异常：幂等键 K1 已被不同参数复用，拒绝处理
-2026-10-23 11:18:41.517 [34mINFO [0;39m [http-nio-8080-exec-6] [traceId=b24a97f29eb946abb3c4174825d07999] [36mc.zl.d10.idempotent.IdempotentController[0;39m - 【实际执行业务】进入下单逻辑，幂等键=K2, 第 3 次执行, 参数=OrderRequest(userId=1001, goodsId=G-1, quantity=2, remark=first)
-2026-10-23 11:18:42.121 [34mINFO [0;39m [http-nio-8080-exec-10] [traceId=ac16695867fb489381c6f052e2aa2f52] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=1.0
-2026-10-23 11:18:42.137 [34mINFO [0;39m [http-nio-8080-exec-9] [traceId=ea34399a6a3340c99717bd6d200e74f4] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0
-2026-10-23 11:18:42.151 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=0d58b8515f4647e691dc35dffa11c4fb] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.152 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=0d58b8515f4647e691dc35dffa11c4fb] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.219 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=82b1050d6eaf481f9cd5b6582484e6b0] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.220 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=82b1050d6eaf481f9cd5b6582484e6b0] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.224 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=3b14f0bcd9b649be9c766ee60ac47c8c] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.225 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=3b14f0bcd9b649be9c766ee60ac47c8c] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.230 [31mWARN [0;39m [http-nio-8080-exec-5] [traceId=d783b0d3cafd4cde981e5fd2a02a9237] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.230 [31mWARN [0;39m [http-nio-8080-exec-5] [traceId=d783b0d3cafd4cde981e5fd2a02a9237] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.235 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=8db2d8ae17d3432c805c180035bc6fdf] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.235 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=8db2d8ae17d3432c805c180035bc6fdf] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.241 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=7dd6a0cc6b474ed9b940a0c6d4adc264] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.241 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=7dd6a0cc6b474ed9b940a0c6d4adc264] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.246 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=986aa1990f3c4484a4cdac08bfe41a0e] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.246 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=986aa1990f3c4484a4cdac08bfe41a0e] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.251 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=55dfe5aae6864a73bad7223facae0673] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=0:0:0:0:0:0:0:1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.252 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=55dfe5aae6864a73bad7223facae0673] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=0:0:0:0:0:0:0:1）
-2026-10-23 11:18:42.263 [34mINFO [0;39m [http-nio-8080-exec-10] [traceId=886846c8b53d41fb83859eff6869dc98] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=1.1.1.1, 剩余令牌=1.0
-2026-10-23 11:18:42.278 [34mINFO [0;39m [http-nio-8080-exec-9] [traceId=0cc7f2944bf243b385a197befc3e7782] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=1.1.1.1, 剩余令牌=0.0
-2026-10-23 11:18:42.291 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=a23f888c277f4485883dd1dbc98db834] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=1.1.1.1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.291 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=a23f888c277f4485883dd1dbc98db834] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=1.1.1.1）
-2026-10-23 11:18:42.297 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=eef7b04900434e1f97983b12107eff10] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=1.1.1.1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.298 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=eef7b04900434e1f97983b12107eff10] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=1.1.1.1）
-2026-10-23 11:18:42.332 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=d6e89525ab974c729bb19fa286c218bd] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=1.1.1.1, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.333 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=d6e89525ab974c729bb19fa286c218bd] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=1.1.1.1）
-2026-10-23 11:18:42.338 [34mINFO [0;39m [http-nio-8080-exec-5] [traceId=e45948796dd34022aebe0ee160ba8bca] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=USER, id=u100, 剩余令牌=1.0
-2026-10-23 11:18:42.353 [34mINFO [0;39m [http-nio-8080-exec-4] [traceId=46e9533494fb4533a22dbc130b062103] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=USER, id=u100, 剩余令牌=0.0
-2026-10-23 11:18:42.367 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=9138bfe6564749569ce8e1e4be4b3057] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=USER, id=u100, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.367 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=9138bfe6564749569ce8e1e4be4b3057] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=USER, id=u100）
-2026-10-23 11:18:42.373 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=186d73c7e70f49ae89f1bae44b83e4f4] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=USER, id=u100, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.373 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=186d73c7e70f49ae89f1bae44b83e4f4] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=USER, id=u100）
-2026-10-23 11:18:42.378 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=1a2361e46abb4aca9c1712b8c20a7035] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=USER, id=u100, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.378 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=1a2361e46abb4aca9c1712b8c20a7035] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=USER, id=u100）
-2026-10-23 11:18:42.385 [34mINFO [0;39m [http-nio-8080-exec-10] [traceId=6f0008638759430d9bdfacb9c3fd02b5] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=USER, id=u200, 剩余令牌=1.0
-2026-10-23 11:18:42.407 [34mINFO [0;39m [http-nio-8080-exec-9] [traceId=7d7276a6394c432ea6e9a762f216e3c1] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=USER, id=u200, 剩余令牌=0.0
-2026-10-23 11:18:42.427 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=3ac4ed11d59f4587b7edb25eef2b4f45] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=USER, id=u200, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.427 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=3ac4ed11d59f4587b7edb25eef2b4f45] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=USER, id=u200）
-2026-10-23 11:18:42.435 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=d116a51ed91645c681c2a98f6ca52b35] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=USER, id=u200, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.436 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=d116a51ed91645c681c2a98f6ca52b35] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=USER, id=u200）
-2026-10-23 11:18:42.442 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=daea18ee7087409bba8e91eb6c360935] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=USER, id=u200, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.443 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=daea18ee7087409bba8e91eb6c360935] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=USER, id=u200）
-2026-10-23 11:18:42.449 [34mINFO [0;39m [http-nio-8080-exec-5] [traceId=6b4760bd07254b3cae84fd6a9bbf3e4d] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=BUSINESS, id=order-query, 剩余令牌=1.0
-2026-10-23 11:18:42.462 [34mINFO [0;39m [http-nio-8080-exec-4] [traceId=2b9f007bc4bd4e8db63dd341dfacfe70] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=BUSINESS, id=order-query, 剩余令牌=0.0
-2026-10-23 11:18:42.479 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=a78c3d2851dd49afa4176afdf9433a5b] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=BUSINESS, id=order-query, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.479 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=a78c3d2851dd49afa4176afdf9433a5b] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=BUSINESS, id=order-query）
-2026-10-23 11:18:42.485 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=651f4afe30d5410ea98148106b89d291] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=BUSINESS, id=order-query, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.485 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=651f4afe30d5410ea98148106b89d291] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=BUSINESS, id=order-query）
-2026-10-23 11:18:42.491 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=b4a7ef17942949918212ca6745bd2fe3] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=BUSINESS, id=order-query, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:18:42.491 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=b4a7ef17942949918212ca6745bd2fe3] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=BUSINESS, id=order-query）
-2026-10-23 11:18:42.497 [34mINFO [0;39m [http-nio-8080-exec-10] [traceId=3fb62476a8434dd597c2d8429ae36ef4] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=9.9.9.9, 剩余令牌=2.0
-2026-10-23 11:18:42.509 [34mINFO [0;39m [http-nio-8080-exec-9] [traceId=76432089a67d48108da79361f0f561e1] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=9.9.9.9, 剩余令牌=0.0
-2026-10-23 11:18:42.522 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=e5307715d8524e37bcc5a32f5d9aa6e4] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=9.9.9.9, 剩余令牌=0.0, 建议等待=2.00s
-2026-10-23 11:18:42.523 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=e5307715d8524e37bcc5a32f5d9aa6e4] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=9.9.9.9）
-2026-10-23 11:18:42.528 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=d9541b7ef4b443d1ac0562f990eeb93b] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=9.9.9.9, 剩余令牌=0.0, 建议等待=2.00s
-2026-10-23 11:18:42.529 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=d9541b7ef4b443d1ac0562f990eeb93b] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=9.9.9.9）
-2026-10-23 11:19:19.373 [1;31mERROR[0;39m [http-nio-8080-exec-4] [traceId=93d9a41320c1416fbe0b399614658982] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 全局异常：
-org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('u' (code 117)): was expecting double-quote to start field name
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:408)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:356)
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:204)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:176)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at com.zl.d10.trace.TraceIdFilter.doFilterInternal(TraceIdFilter.java:57)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('u' (code 117)): was expecting double-quote to start field name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
-	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2675)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:743)
-	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2148)
-	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
-	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:173)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2148)
-	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1504)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:397)
-	... 59 common frames omitted
-2026-10-23 11:19:36.116 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=367f90d72afa4aa29afe1abdb6b5c9a0] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 业务异常：幂等键 K1 已被不同参数复用，拒绝处理
-2026-10-23 11:19:58.406 [31mWARN [0;39m [http-nio-8080-exec-10] [traceId=3b83b1c8e01e4b4280ed299361bd3d5f] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 业务异常：幂等键 K1 已被不同参数复用，拒绝处理
-2026-10-23 11:20:26.809 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=d9054bf97ff94061a981f006fc83a265] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=7.7.7.7, 剩余令牌=1.0
-2026-10-23 11:20:26.816 [34mINFO [0;39m [http-nio-8080-exec-2] [traceId=9d88ffb3ef1541488f181fa4ac32d4b6] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=7.7.7.7, 剩余令牌=0.0
-2026-10-23 11:20:26.816 [31mWARN [0;39m [http-nio-8080-exec-5] [traceId=0d68fc3b59354ed8a38abdf0450bbae0] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=7.7.7.7, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:20:26.816 [31mWARN [0;39m [http-nio-8080-exec-5] [traceId=0d68fc3b59354ed8a38abdf0450bbae0] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=7.7.7.7）
-2026-10-23 11:20:26.858 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=d44f357d991e42619aeff8bfe2d00859] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=7.7.7.7, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:20:26.858 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=d44f357d991e42619aeff8bfe2d00859] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=7.7.7.7）
-2026-10-23 11:20:26.865 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=b2bc66dec5494d4986beddeb9e88e182] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=7.7.7.7, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:20:26.865 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=b2bc66dec5494d4986beddeb9e88e182] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=7.7.7.7）
-2026-10-23 11:20:26.865 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=4bf6fe11ab19407bb2de867a80680341] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=7.7.7.7, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:20:26.871 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=4bf6fe11ab19407bb2de867a80680341] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=7.7.7.7）
-2026-10-23 11:21:05.273 [34mINFO [0;39m [http-nio-8080-exec-8] [traceId=9c1610c31ac943b0898218f1fd68e8df] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=8.8.8.8, 剩余令牌=1.0
-2026-10-23 11:21:05.289 [34mINFO [0;39m [http-nio-8080-exec-10] [traceId=714dbc4134a64a248be9121c44834ec4] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=8.8.8.8, 剩余令牌=0.0
-2026-10-23 11:21:05.289 [31mWARN [0;39m [http-nio-8080-exec-9] [traceId=d38cc84e525f489fbf7c5c67f4fcb009] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=8.8.8.8, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:05.293 [31mWARN [0;39m [http-nio-8080-exec-9] [traceId=d38cc84e525f489fbf7c5c67f4fcb009] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=8.8.8.8）
-2026-10-23 11:21:05.322 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=c1b6ad6de73c4408ab2cb7b8a878c745] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=8.8.8.8, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:05.322 [31mWARN [0;39m [http-nio-8080-exec-1] [traceId=c1b6ad6de73c4408ab2cb7b8a878c745] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=8.8.8.8）
-2026-10-23 11:21:05.330 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=aaf190c8692b497d89cade2c3c8c6db4] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=8.8.8.8, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:05.330 [31mWARN [0;39m [http-nio-8080-exec-2] [traceId=aaf190c8692b497d89cade2c3c8c6db4] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=8.8.8.8）
-2026-10-23 11:21:05.336 [31mWARN [0;39m [http-nio-8080-exec-5] [traceId=c10c4adbbfbc4402ade4609f30dd18d6] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=8.8.8.8, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:05.336 [31mWARN [0;39m [http-nio-8080-exec-5] [traceId=c10c4adbbfbc4402ade4609f30dd18d6] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=8.8.8.8）
-2026-10-23 11:21:29.533 [34mINFO [0;39m [http-nio-8080-exec-4] [traceId=e82db883c8b5467f97f70a11a3a5b266] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=6.6.6.6, 剩余令牌=1.0
-2026-10-23 11:21:29.544 [34mINFO [0;39m [http-nio-8080-exec-7] [traceId=c07939f266d14d0c8c5e84f52fdeee22] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=6.6.6.6, 剩余令牌=0.0
-2026-10-23 11:21:29.550 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=0ede92e24147410f9e6c552dd94c35aa] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=6.6.6.6, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:29.550 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=0ede92e24147410f9e6c552dd94c35aa] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=6.6.6.6）
-2026-10-23 11:21:29.586 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=ac17e352c64541869c3eeef16b27b8f8] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=6.6.6.6, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:29.586 [31mWARN [0;39m [http-nio-8080-exec-8] [traceId=ac17e352c64541869c3eeef16b27b8f8] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=6.6.6.6）
-2026-10-23 11:21:29.586 [31mWARN [0;39m [http-nio-8080-exec-10] [traceId=ed60e528165f4140860dc72986792e84] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=6.6.6.6, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:29.592 [31mWARN [0;39m [http-nio-8080-exec-10] [traceId=ed60e528165f4140860dc72986792e84] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=6.6.6.6）
-2026-10-23 11:21:29.592 [31mWARN [0;39m [http-nio-8080-exec-9] [traceId=85ee1c0fcd68418f8a187146c0d293ef] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=6.6.6.6, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:21:29.592 [31mWARN [0;39m [http-nio-8080-exec-9] [traceId=85ee1c0fcd68418f8a187146c0d293ef] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=6.6.6.6）
-2026-10-23 11:22:02.109 [34mINFO [0;39m [http-nio-8080-exec-2] [traceId=6de4f0e7dec24bb4b3ddf1bf46f5e318] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=5.5.5.5, 剩余令牌=1.0
-2026-10-23 11:22:02.162 [34mINFO [0;39m [http-nio-8080-exec-5] [traceId=d538d3c3e77e4240a100f4bdfc5147fb] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=5.5.5.5, 剩余令牌=0.0
-2026-10-23 11:22:02.178 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=e961ff029496464ab2e231ff7daee846] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=5.5.5.5, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:22:02.181 [31mWARN [0;39m [http-nio-8080-exec-3] [traceId=e961ff029496464ab2e231ff7daee846] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=5.5.5.5）
-2026-10-23 11:22:02.273 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=b749c91e2e2a497c888ec84d25235145] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=5.5.5.5, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:22:02.273 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=b749c91e2e2a497c888ec84d25235145] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=5.5.5.5）
-2026-10-23 11:22:02.279 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=70e4724e3b094ab18aab81216fc5279c] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=5.5.5.5, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:22:02.279 [31mWARN [0;39m [http-nio-8080-exec-7] [traceId=70e4724e3b094ab18aab81216fc5279c] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=5.5.5.5）
-2026-10-23 11:22:02.285 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=065d41fc0a3344df9b67a847ac877270] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=5.5.5.5, 剩余令牌=0.0, 建议等待=1.00s
-2026-10-23 11:22:02.286 [31mWARN [0;39m [http-nio-8080-exec-6] [traceId=065d41fc0a3344df9b67a847ac877270] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=5.5.5.5）
+2026-10-24 17:10:52.549 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.config.AsyncThreadPoolConfig[0;39m - bizTaskExecutor 初始化完成: core=32, max=64, queue=200
+2026-10-24 17:10:53.648 [34mINFO [0;39m [main] [traceId=] [36mc.b.m.s.MybatisPlusApplicationContextAware[0;39m - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@332a7fce
+2026-10-24 17:10:54.427 [31mWARN [0;39m [main] [traceId=] [36mo.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger[0;39m - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-24 17:10:54.434 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - Exposing 1 endpoint beneath base path '/actuator'
+2026-10-24 17:10:54.548 [34mINFO [0;39m [main] [traceId=] [36mo.apache.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-24 17:10:54.563 [34mINFO [0;39m [main] [traceId=] [36mo.s.b.w.embedded.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2026-10-24 17:10:54.581 [34mINFO [0;39m [Thread-3] [traceId=] [36mc.a.n.c.a.ram.identify.CredentialWatcher[0;39m - null No credential found
+2026-10-24 17:10:54.586 [34mINFO [0;39m [main] [traceId=] [36mc.a.nacos.client.logging.NacosLogging[0;39m - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2026-10-24 17:10:54.587 [34mINFO [0;39m [main] [traceId=] [36mc.a.nacos.client.logging.NacosLogging[0;39m - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2026-10-24 17:10:54.588 [34mINFO [0;39m [main] [traceId=] [36mc.a.nacos.client.logging.NacosLogging[0;39m - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2026-10-24 17:10:54.662 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.p.a.s.c.ClientAuthPluginManager[0;39m - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-10-24 17:10:54.664 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.p.a.s.c.ClientAuthPluginManager[0;39m - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-10-24 17:10:55.281 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.AbstractAbilityControlManager[0;39m - Ready to get current node abilities...
+2026-10-24 17:10:55.284 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.AbstractAbilityControlManager[0;39m - Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-10-24 17:10:55.284 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.AbstractAbilityControlManager[0;39m - Initialize current abilities finish...
+2026-10-24 17:10:55.285 [34mINFO [0;39m [main] [traceId=] [36mc.a.n.c.a.d.NacosAbilityManagerHolder[0;39m - [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-10-24 17:10:55.341 [34mINFO [0;39m [main] [traceId=] [36mc.a.c.n.registry.NacosServiceRegistry[0;39m - nacos registry, DEFAULT_GROUP d10-iarl 192.168.6.1:8080 register finished
+2026-10-24 17:10:55.373 [34mINFO [0;39m [main] [traceId=] [36mcom.zl.d10.D10App[0;39m - Started D10App in 9.512 seconds (process running for 10.241)
+2026-10-24 17:11:43.806 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=] [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-24 17:11:43.807 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=] [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2026-10-24 17:11:43.810 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=] [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2026-10-24 17:11:43.955 [34mINFO [0;39m [http-nio-8080-exec-1] [traceId=c9c6709179d74f7eb7deb6a970d09fee] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=127.0.0.1, 剩余令牌=1.0
+2026-10-24 17:11:44.079 [34mINFO [0;39m [http-nio-8080-exec-3] [traceId=3f5e27296dfc41aab02069a8b845c281] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=127.0.0.1, 剩余令牌=0.0
+2026-10-24 17:11:44.173 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=7fe48b0e80d74031a20da12141a1cd63] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=127.0.0.1, 剩余令牌=0.0, 建议等待=1.00s
+2026-10-24 17:11:44.176 [31mWARN [0;39m [http-nio-8080-exec-4] [traceId=7fe48b0e80d74031a20da12141a1cd63] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=127.0.0.1）
+2026-10-24 17:11:54.694 [34mINFO [0;39m [http-nio-8080-exec-7] [traceId=9946c26228da4d5ab7aa3bf93439bdb2] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=127.0.0.1, 剩余令牌=1.0
+2026-10-24 17:11:54.772 [34mINFO [0;39m [http-nio-8080-exec-9] [traceId=8f3f972b1c3b42418e0f3a05145961a4] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流放行，维度=IP, id=127.0.0.1, 剩余令牌=0.0
+2026-10-24 17:11:54.859 [31mWARN [0;39m [http-nio-8080-exec-10] [traceId=6ced5caa193e4aa59f628d077ca54e47] [36mcom.zl.d10.ratelimit.RateLimitAspect[0;39m - 限流拦截，维度=IP, id=127.0.0.1, 剩余令牌=0.0, 建议等待=1.00s
+2026-10-24 17:11:54.859 [31mWARN [0;39m [http-nio-8080-exec-10] [traceId=6ced5caa193e4aa59f628d077ca54e47] [36mc.zl.d10.common.GlobalExceptionHandler[0;39m - 限流：请求过于频繁，已触发限流（维度=IP, id=127.0.0.1）
