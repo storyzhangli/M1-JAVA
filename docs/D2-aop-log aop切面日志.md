@@ -315,7 +315,3 @@ public class WebLogAspect {
 ## 项目源码地址
 
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-aop](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-aop)
-
-## 公众号
-
-![公众号图片](imgs/D2-aop-log.assets/qrcode_for_macrozheng_258.jpg)
