@@ -55,11 +55,7 @@
 
 ### 2.2 扫描发现的关键事实
 
-1. **D09_GATEWAY 是 D08 业务模块的完整副本**：
-   - 含 `spring-boot-starter-web`、MyBatis-Plus、Redisson、MySQL、Knife4j 及大量 `common/config/controller/entity/lock/mapper/service` 源码（启动类名为 `D09App`）。
-   - 这与 Spring Cloud Gateway 的**反应式 WebFlux 模型根本冲突**：Servlet（`spring-boot-starter-web`）与 WebFlux 不能共存。
-2. **D09_SERVICE_CONSUMER / D09_SERVICE_PROVIDER 仅有空目录与 POM**（无源码、无依赖）。
-3. 父 POM 已正确 import 两个 BOM：
+1. 父 POM 已正确 import 两个 BOM：
    - `spring-cloud-dependencies:2025.0.0`
    - `spring-cloud-alibaba-dependencies:2025.0.0.0`
    - 已锁定 Java 21、Spring Boot 3.5.16。
