@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>d09_feign_order-service</artifactId>
-    <description>库存服务模块 8082</description>
+    <description>订单服务模块 8082</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
