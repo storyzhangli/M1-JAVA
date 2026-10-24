@@ -51,7 +51,6 @@ public class AsyncThreadPoolConfig {
         executor.setWaitForTasksToCompleteOnShutdown(true);
         executor.setAwaitTerminationSeconds(30);
 
-        executor.initialize();
         log.info("bizTaskExecutor 初始化完成: core={}, max={}, queue={}",
                 cpuCores * 2, cpuCores * 4, 200);
         return executor;
